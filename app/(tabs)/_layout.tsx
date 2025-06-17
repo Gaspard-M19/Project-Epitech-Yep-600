@@ -1,3 +1,5 @@
+import { FontAwesome6 } from '@expo/vector-icons';
+
 import { Tabs } from 'expo-router';
 import React from 'react';
 import { Platform } from 'react-native';
@@ -38,6 +40,19 @@ export default function TabLayout() {
         options={{
           title: 'Explore',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="slot"
+        options={{
+          title: 'Slot',
+          tabBarIcon: ({ color, focused }) => (
+            <FontAwesome6 
+              name="chess-pawn" 
+              size={28} 
+              color={color} 
+            />
+          ),
         }}
       />
     </Tabs>
