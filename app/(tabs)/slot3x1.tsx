@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import { Animated, Button, StyleSheet, Text, View } from 'react-native';
 
 const SlotMachine = () => {
-  const SYMBOLS = ['🍒', '🍋', '🍊', '🍉', '7️⃣', '💎', '🍓', '🍇'];
+  const SYMBOLS = ['🍒', '🍋', '🍊', '🍉', '7️⃣', '💎', '🍓', '🍇', '🍑'];
   const [slots, setSlots] = useState([0, 0, 0]);
   const [spinning, setSpinning] = useState(false);
   const [result, setResult] = useState('');
